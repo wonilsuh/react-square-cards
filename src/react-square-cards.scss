@@ -1,0 +1,84 @@
+@mixin react-square-card-4-column-width(){
+	min-width:25%;
+	max-width:25%;
+}
+
+@mixin react-square-card-3-column-width(){
+	min-width:(100% / 3);
+	max-width:(100% / 3);
+}
+
+@mixin react-square-card-2-column-width(){
+	min-width:50%;
+	max-width:50%;
+}
+
+@mixin react-square-card-1-column-width(){
+	min-width:100%;
+	max-width:100%;
+}
+
+.react-square-cards-wrap{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	box-sizing:border-box;
+
+	.react-square-card{
+		flex:1;
+		box-sizing:border-box;
+		line-height:0;
+		@include react-square-card-4-column-width();
+
+		.react-square-card-inner{
+			position:relative;
+			width:100%;
+			height:0%;
+			padding-top:100%;
+			
+			.react-square-card-innerer{
+				position:absolute;
+				top:0;
+				left:0;
+				bottom:0;
+				right:0;
+				line-height:120%;
+				box-sizing:border-box;
+				padding:1em;
+			}
+		}
+	}
+
+	@media only screen and (max-width:1399px){
+
+		.react-square-card{
+			@include react-square-card-3-column-width();
+		}
+	}
+
+	@media only screen and (max-width:1055px){
+
+		.react-square-card{
+			@include react-square-card-2-column-width();
+		}	
+	}
+
+	@media only screen and (max-width:710px){
+
+		.react-square-card{
+			@include react-square-card-1-column-width();
+
+			.react-square-card-inner{
+				position:static;
+				padding-top:0;
+				height:auto;
+
+				.react-square-card-innerer{
+					position:static;
+					bottom:inherit;
+					right:inherit;
+				}
+			}
+		}
+	}
+}

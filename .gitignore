@@ -1,5 +1,5 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+node_modules
+build
+npm-debug.log
+esdoc
+.DS_Store
