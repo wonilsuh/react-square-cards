@@ -30,3 +30,8 @@ const MainView = (props) => (
 
 export default MainView;
 ```
+
+## Example
+
+Take a look at this page for an example:
+http://wonilsuh.com/npm/react-square-cards/example-react/
