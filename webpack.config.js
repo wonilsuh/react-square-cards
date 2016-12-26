@@ -57,9 +57,9 @@ var loaders = [
 
 module.exports = {
 	"entry":{
-		"dist/js/index":"./src/index.js",
+		"dist/js/index":"./src/ReactSquareCards.js",
 		"dist/js/react-square-cards-css-loader":"./src/css-loader.js",
-		// "example-react/js/index":"./src-example-react/index.js"
+		"example-react/js/index":"./src-example-react/index.js"
 	},
 	"output":{
 		"filename":"[name].js",

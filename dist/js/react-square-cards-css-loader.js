@@ -58,20 +58,20 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	"use strict";
 
-	__webpack_require__(33);
+	__webpack_require__(32);
 
 /***/ },
 
-/***/ 33:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(34);
+	var content = __webpack_require__(33);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(36)(content, {});
+	var update = __webpack_require__(35)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -89,22 +89,22 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 
-/***/ 34:
+/***/ 33:
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(35)();
+	exports = module.exports = __webpack_require__(34)();
 	// imports
 
 
 	// module
-	exports.push([module.id, ".react-square-cards-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  box-sizing: border-box; }\n  .react-square-cards-wrap .react-square-card {\n    -webkit-box-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    box-sizing: border-box;\n    line-height: 0;\n    min-width: 25%;\n    max-width: 25%; }\n    .react-square-cards-wrap .react-square-card .react-square-card-inner {\n      position: relative;\n      width: 100%;\n      height: 0%;\n      padding-top: 100%; }\n      .react-square-cards-wrap .react-square-card .react-square-card-inner .react-square-card-innerer {\n        position: absolute;\n        top: 0;\n        left: 0;\n        bottom: 0;\n        right: 0;\n        line-height: 120%;\n        box-sizing: border-box;\n        padding: 1em; }\n  @media only screen and (max-width: 1399px) {\n    .react-square-cards-wrap .react-square-card {\n      min-width: 33.33333%;\n      max-width: 33.33333%; } }\n  @media only screen and (max-width: 1055px) {\n    .react-square-cards-wrap .react-square-card {\n      min-width: 50%;\n      max-width: 50%; } }\n  @media only screen and (max-width: 710px) {\n    .react-square-cards-wrap .react-square-card {\n      min-width: 100%;\n      max-width: 100%; }\n      .react-square-cards-wrap .react-square-card .react-square-card-inner {\n        position: static;\n        padding-top: 0;\n        height: auto; }\n        .react-square-cards-wrap .react-square-card .react-square-card-inner .react-square-card-innerer {\n          position: static;\n          bottom: inherit;\n          right: inherit; } }\n", ""]);
+	exports.push([module.id, ".react-square-cards-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  box-sizing: border-box; }\n  .react-square-cards-wrap .react-square-card {\n    -webkit-box-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    box-sizing: border-box;\n    line-height: 0;\n    min-width: 25%;\n    max-width: 25%; }\n    .react-square-cards-wrap .react-square-card .react-square-card-inner {\n      position: relative;\n      width: 100%;\n      height: 0%;\n      padding-top: 100%; }\n      .react-square-cards-wrap .react-square-card .react-square-card-inner .react-square-card-innerer {\n        position: absolute;\n        top: 0;\n        left: 0;\n        bottom: 0;\n        right: 0;\n        line-height: 120%;\n        box-sizing: border-box;\n        padding: 5px; }\n        .react-square-cards-wrap .react-square-card .react-square-card-inner .react-square-card-innerer .react-square-card-content {\n          position: relative;\n          width: 100%;\n          height: 100%;\n          box-sizing: border-box; }\n  .react-square-cards-wrap.padding-20 .react-square-card .react-square-card-inner .react-square-card-innerer {\n    padding: 10px; }\n  @media only screen and (max-width: 1399px) {\n    .react-square-cards-wrap .react-square-card {\n      min-width: 33.33333%;\n      max-width: 33.33333%; } }\n  @media only screen and (max-width: 1055px) {\n    .react-square-cards-wrap .react-square-card {\n      min-width: 50%;\n      max-width: 50%; } }\n  @media only screen and (max-width: 710px) {\n    .react-square-cards-wrap .react-square-card {\n      min-width: 100%;\n      max-width: 100%; }\n      .react-square-cards-wrap .react-square-card .react-square-card-inner {\n        position: static;\n        padding-top: 0;\n        height: auto; }\n        .react-square-cards-wrap .react-square-card .react-square-card-inner .react-square-card-innerer {\n          position: static;\n          bottom: inherit;\n          right: inherit; } }\n", ""]);
 
 	// exports
 
 
 /***/ },
 
-/***/ 35:
+/***/ 34:
 /***/ function(module, exports) {
 
 	/*
@@ -161,7 +161,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 
-/***/ 36:
+/***/ 35:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
