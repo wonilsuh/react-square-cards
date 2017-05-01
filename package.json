@@ -1,9 +1,11 @@
 {
   "name": "react-square-cards",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Sqaure card layout system for React.js",
   "main": "dist/js/index.js",
-  "dependencies": {},
+  "dependencies": {
+    "react-masonry-component": "^5.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.5.4",
     "babel-cli": "^6.14.0",
@@ -18,6 +20,7 @@
     "babel-runtime": "^6.11.6",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.26.1",
+    "file-loader": "^0.9.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "html-webpack-plugin": "^2.22.0",
@@ -25,9 +28,10 @@
     "node-sass": "^4.1.1",
     "postcss": "^5.2.6",
     "postcss-loader": "^1.2.1",
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
     "react-grids": "^1.0.0",
+    "react-packery-component": "^1.0.2",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
     "svg-react-loader": "^0.3.7",

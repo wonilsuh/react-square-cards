@@ -81,7 +81,9 @@ module.exports = {
         		"name":"wonilSuh.com",
         		"namespace":"mainApp",
         		"version":packageJSON.version
-        	})
+        	}),
+        	"react":"React",
+        	"react-dom":"ReactDOM"
         }
     ],
     "plugins":[
