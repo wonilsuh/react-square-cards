@@ -10,8 +10,10 @@ class Card extends React.Component{
 	
 	render(){
 		return (
-			<div className={`react-square-card ${this.props.className ? this.props.className : ''} aspect-ratio-${this.props['aspect-ratio'] || 1}`}>
-				<div className="react-square-card-inner">
+			<div className={`react-square-card ${this.props.className ? this.props.className : ''}`}>
+				<div className="react-square-card-inner" style={{
+					paddingTop:((this.props['aspect-ratio-height'] || 1) / (this.props['aspect-ratio-width'] || 1) * 100)+'%'
+				}}>
 					<div className="react-square-card-innerer">
 						<div className="react-square-card-content">
 							{this.props.children}
