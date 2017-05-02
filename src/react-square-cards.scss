@@ -49,6 +49,16 @@
 			}
 		}
 	}
+
+	&.no-padding{
+
+		.react-square-card-inner{
+
+			.react-square-card-innerer{
+				padding:0;
+			}
+		}
+	}
 }
 
 .react-square-cards-wrap{

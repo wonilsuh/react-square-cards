@@ -10,7 +10,7 @@ class Card extends React.Component{
 	
 	render(){
 		return (
-			<div className="react-square-card">
+			<div className={`react-square-card ${this.props.className}`}>
 				<div className="react-square-card-inner">
 					<div className="react-square-card-innerer">
 						<div className="react-square-card-content">
