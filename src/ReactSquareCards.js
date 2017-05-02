@@ -2,7 +2,7 @@
 
 import React from 'react';
 import PackeryGen from 'react-packery-component';
-var Packery = PackeryGen(React);
+// var Packery = PackeryGen(React);
 
 import './react-square-cards.scss';
 
@@ -23,26 +23,26 @@ class Card extends React.Component{
 	}
 }
 
-class WrapWithPackery extends React.Component{
+// class WrapWithPackery extends React.Component{
 
-	render(){
-		return (
-			<Packery
-				className="react-square-cards-wrap"
-				elementType={'div'}
-				options={{
-					itemSelector:'.react-square-card',
-					columnWidth:'.react-square-card',
-					transitionDuration:0
-				}}
-				disableImagesLoaded={false}
-				updateOnEachImageLoad={false}
-			>
-				{this.props.children}
-			</Packery>
-		);
-	}
-}
+// 	render(){
+// 		return (
+// 			<Packery
+// 				className="react-square-cards-wrap"
+// 				elementType={'div'}
+// 				options={{
+// 					itemSelector:'.react-square-card',
+// 					columnWidth:'.react-square-card',
+// 					transitionDuration:0
+// 				}}
+// 				disableImagesLoaded={false}
+// 				updateOnEachImageLoad={false}
+// 			>
+// 				{this.props.children}
+// 			</Packery>
+// 		);
+// 	}
+// }
 
 const Wrap = (props) => (
 	<div className="react-square-cards-wrap">
@@ -52,8 +52,8 @@ const Wrap = (props) => (
 
 const ReactSquareCards = {
 	Wrap,
-	WrapWithPackery,
-	WrapWithPackeryGen:(React) => WrapWithPackery,
+	// WrapWithPackery,
+	// WrapWithPackeryGen:(React) => WrapWithPackery,
 	Card
 };
 
