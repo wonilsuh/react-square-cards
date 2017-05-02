@@ -1,6 +1,6 @@
 {
   "name": "react-square-cards",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Sqaure card layout system for React.js",
   "main": "dist/js/index.js",
   "dependencies": {

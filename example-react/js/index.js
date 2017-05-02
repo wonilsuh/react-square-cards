@@ -1855,8 +1855,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 		function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-		var Packery = (0, _reactPackeryComponent2.default)(_react2.default);
-
 		var Card = function (_React$Component) {
 			(0, _inherits3.default)(Card, _React$Component);
 
@@ -1890,36 +1888,28 @@ return /******/ (function(modules) { // webpackBootstrap
 			return Card;
 		}(_react2.default.Component);
 
-		var WrapWithPackery = function (_React$Component2) {
-			(0, _inherits3.default)(WrapWithPackery, _React$Component2);
+		// class WrapWithPackery extends React.Component{
 
-			function WrapWithPackery() {
-				(0, _classCallCheck3.default)(this, WrapWithPackery);
-				return (0, _possibleConstructorReturn3.default)(this, (WrapWithPackery.__proto__ || (0, _getPrototypeOf2.default)(WrapWithPackery)).apply(this, arguments));
-			}
+		// 	render(){
+		// 		return (
+		// 			<Packery
+		// 				className="react-square-cards-wrap"
+		// 				elementType={'div'}
+		// 				options={{
+		// 					itemSelector:'.react-square-card',
+		// 					columnWidth:'.react-square-card',
+		// 					transitionDuration:0
+		// 				}}
+		// 				disableImagesLoaded={false}
+		// 				updateOnEachImageLoad={false}
+		// 			>
+		// 				{this.props.children}
+		// 			</Packery>
+		// 		);
+		// 	}
+		// }
 
-			(0, _createClass3.default)(WrapWithPackery, [{
-				key: 'render',
-				value: function render() {
-					return _react2.default.createElement(
-						Packery,
-						{
-							className: 'react-square-cards-wrap',
-							elementType: 'div',
-							options: {
-								itemSelector: '.react-square-card',
-								columnWidth: '.react-square-card',
-								transitionDuration: 0
-							},
-							disableImagesLoaded: false,
-							updateOnEachImageLoad: false
-						},
-						this.props.children
-					);
-				}
-			}]);
-			return WrapWithPackery;
-		}(_react2.default.Component);
+		// var Packery = PackeryGen(React);
 
 		var Wrap = function Wrap(props) {
 			return _react2.default.createElement(
@@ -1931,10 +1921,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 		var ReactSquareCards = {
 			Wrap: Wrap,
-			WrapWithPackery: WrapWithPackery,
-			WrapWithPackeryGen: function WrapWithPackeryGen(React) {
-				return WrapWithPackery;
-			},
+			// WrapWithPackery,
+			// WrapWithPackeryGen:(React) => WrapWithPackery,
 			Card: Card
 		};
 
