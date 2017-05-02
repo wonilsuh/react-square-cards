@@ -129,7 +129,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
-					{ className: 'react-square-card ' + this.props.className },
+					{ className: 'react-square-card ' + this.props.className + ' ' + (this.props['aspect-ratio'] || 1) },
 					_react2.default.createElement(
 						'div',
 						{ className: 'react-square-card-inner' },
